@@ -1,0 +1,10 @@
+.navigationList li:hover {
+  /* decoration-amber-600 underline-offset-[7px] hover:underline; */
+  text-decoration: underline;
+  text-decoration-color: #82181a;
+  text-underline-offset: 7px;
+}
+.navigationList {
+  display: flex;
+  gap: 0 32px;
+}
