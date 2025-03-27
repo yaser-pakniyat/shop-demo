@@ -1,7 +1,13 @@
+import { useSelector } from "react-redux";
+import styles from "../../styles/about.module.css";
+import { RootState } from "@/redux/store";
 export default function About() {
+  const theme = useSelector((store: RootState) => store.global.theme);
   return (
-    <div className="mt-16 mx-12 text-justify">
-      <h6 className="font-bold text-2xl mb-4">About Page</h6>
+    <div
+      className={`${styles.aboutWrapper} ${theme == "dark" ? styles.dark : ""}`}
+    >
+      <h6 className="mb-4 text-2xl font-bold">About Page</h6>
       <p className="leading-5">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
         placeat ex, voluptates repellendus quam ipsam corrupti, id sequi eveniet
