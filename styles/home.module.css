@@ -1,0 +1,9 @@
+.homeWrapper {
+  text-align: justify;
+  padding: 64px 48px 0;
+}
+
+.homeWrapper.dark {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
