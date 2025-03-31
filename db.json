@@ -1,0 +1,29 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "href": "/",
+      "linkName": "Home"
+    },
+    {
+      "id": 2,
+      "href": "/about",
+      "linkName": "About"
+    },
+    {
+      "id": 3,
+      "href": "/feature",
+      "linkName": "Feature"
+    },
+    {
+      "id": 4,
+      "href": "/technologies",
+      "linkName": "Technologies"
+    },
+    {
+      "id": 5,
+      "href": "/contact",
+      "linkName": "Contact"
+    }
+  ]
+}
