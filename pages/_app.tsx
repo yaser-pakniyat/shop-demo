@@ -10,6 +10,7 @@ import type { AppProps } from "next/app";
 import Header from "@/components/Header/Header";
 import { Provider } from "react-redux";
 import store from "@/redux/store";
+import Footer from "@/components/footer/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div>
         <Header />
         <Component {...pageProps} />
+        <Footer />
       </div>
     </Provider>
   );
