@@ -23,4 +23,21 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* Styles for About Page and Home Page */
+.wrapper {
+  @apply p-14 text-justify;
+}
+
+.darkWrapper {
+  @apply bg-gray-700 text-gray-50;
+}
+
+.title {
+  @apply mb-4 text-2xl font-bold;
+}
+
+.text {
+  @apply leading-5;
 }
