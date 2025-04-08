@@ -25,5 +25,49 @@
       "href": "/contact",
       "linkName": "Contact"
     }
+  ],
+  "social": [
+    {
+      "id": 1,
+      "name": "Instagram",
+      "icon": "skill-icons:instagram",
+      "address": "@instagram"
+    },
+    {
+      "id": 2,
+      "name": "Telegram",
+      "icon": "logos:telegram",
+      "address": "@telegram"
+    },
+    {
+      "id": 3,
+      "name": "Whatsapp",
+      "icon": "logos:whatsapp-icon",
+      "address": "@whatsapp"
+    },
+    {
+      "id": 4,
+      "name": "LinkedIn",
+      "icon": "logos:linkedin-icon",
+      "address": "@linkedin"
+    },
+    {
+      "id": 5,
+      "name": "Youtube",
+      "icon": "logos:youtube-icon",
+      "address": "@youtube"
+    },
+    {
+      "id": 6,
+      "name": "GitHub",
+      "icon": "logos:github-icon",
+      "address": "@github"
+    },
+    {
+      "id": 7,
+      "name": "X",
+      "icon": "devicon:twitter",
+      "address": "@x"
+    }
   ]
 }
