@@ -5,11 +5,9 @@ import { RootState } from "@/redux/store";
 export default function Home() {
   const theme = useSelector((store: RootState) => store.global.theme);
   return (
-    <div
-      className={`${styles.homeWrapper} ${theme == "dark" ? styles.dark : ""}`}
-    >
-      <h6 className="mb-4 text-2xl font-bold">Home Page</h6>
-      <p className="leading-5">
+    <div className={`wrapper ${theme == "dark" ? "darkWrapper" : ""}`}>
+      <h6 className="title">Home Page</h6>
+      <p className="text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ut sit
         laboriosam tenetur consequuntur, perferendis molestias nam veritatis,
         nobis quasi harum quas? Deleniti itaque molestiae maiores iste sunt hic
