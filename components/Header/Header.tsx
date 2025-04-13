@@ -3,6 +3,7 @@ import styles from "./Header.module.css";
 import ThemeButton from "../theme-button/ThemeButton";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
+import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 import { Icon } from "@iconify/react/dist/iconify.js";
 export default function Header() {
   const theme = useSelector((store: RootState) => store.global.theme);
@@ -11,6 +12,7 @@ export default function Header() {
       className={`${styles.header} ${theme == "dark" ? styles.dark : ""}`}
     >
       <ThemeButton />
+      <HamburgerMenu />
 
       {/* Hamburger Menu Icon start */}
       <Icon
