@@ -1,12 +1,18 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
 import ThemeButton from "../theme-button/ThemeButton";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { openOffcanvas } from "@/redux/slices/offCanvas";
+
 export default function Header() {
   const theme = useSelector((store: RootState) => store.global.theme);
+  const dispatch = useDispatch();
+  const offcanvasOpenHandler = () => {
+    dispatch(openOffcanvas());
+  };
   return (
     <header
       className={`${styles.header} ${theme == "dark" ? styles.dark : ""}`}
@@ -19,11 +25,12 @@ export default function Header() {
         icon="icon-park-outline:hamburger-button"
         width="48"
         height="48"
-        className="flex cursor-pointer"
+        className="flex cursor-pointer md:hidden"
+        onClick={offcanvasOpenHandler}
       />
       {/* Hamburger Menu Icon end */}
 
-      <nav>
+      <nav className="hidden md:flex">
         <ul className={styles.navigationList}>
           <li>
             <Link href="/contact">Contact</Link>
