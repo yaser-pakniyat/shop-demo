@@ -6,6 +6,7 @@ import { RootState } from "@/redux/store";
 import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { openOffcanvas } from "@/redux/slices/offCanvas";
+import db from "@/db.json";
 
 export default function Header() {
   const theme = useSelector((store: RootState) => store.global.theme);
@@ -32,21 +33,14 @@ export default function Header() {
 
       <nav className="hidden md:flex">
         <ul className={styles.navigationList}>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link href="/technologies">Technologies</Link>
-          </li>
-          <li>
-            <Link href="/feature">Feature</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
+          {db.menu
+            .slice()
+            .reverse()
+            .map((menu) => (
+              <li key={menu.id}>
+                <Link href={menu.href}>{menu.linkName}</Link>
+              </li>
+            ))}
         </ul>
       </nav>
     </header>
