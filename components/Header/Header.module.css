@@ -1,18 +1,19 @@
 .navigationList li:hover {
-  /* decoration-amber-600 underline-offset-[7px] hover:underline; */
   text-decoration: underline;
-  text-decoration-color: #82181a;
   text-underline-offset: 7px;
 }
+
 .navigationList {
   display: flex;
   gap: 0 32px;
 }
 
-
 .header.dark {
-    background-color: rgb(59, 25, 90);
-    color: aquamarine;
+  background-color: rgb(59, 25, 90);
+  color: lightpink;
+  &:hover li {
+    text-decoration-color: lightpink;
+  }
 }
 
 .header {
@@ -24,11 +25,14 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  background-color: #886610; /* معادل bg-amber-400 */
-  padding-left: 48px; 
+  background-color: oklch(0.704 0.14 182.503);
+  padding-left: 48px;
   padding-right: 48px;
   font-size: 18px;
   font-weight: 600; /* معادل font-semibold */
-  color: #3f0606; /* معادل text-red-900 */
+  color: rgb(220, 220, 220);
+  &:hover li {
+    text-decoration-color: rgb(220, 220, 220);
+  }
 }
 /* fixed top-0 z-50 flex h-12 w-full items-center justify-between bg-amber-400 px-12 text-lg font-semibold text-red-900 */
