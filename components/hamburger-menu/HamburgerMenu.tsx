@@ -23,11 +23,11 @@ export default function HamburgerMenu() {
       className={`fixed top-0 right-0 z-[60] h-screen w-1/2 transition-all duration-1000 ease-out ${isOpen ? "translate-x-0" : "translate-x-full"} ${theme === "dark" ? "bg-stone-700" : "bg-green-800"} md:translate-x-full`}
     >
       {/* close button start */}
-      <div>
+      <div className="pt-3 pl-3">
         <Icon
           icon="line-md:close"
-          width="32"
-          height="32"
+          width="26"
+          height="26"
           className="cursor-pointer hover:scale-105"
           onClick={CloseOffCanvasHandler}
         />
