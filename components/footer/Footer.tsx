@@ -10,7 +10,7 @@ export default function Footer() {
       className={`flex w-full flex-col gap-y-4 pt-8 ${theme === "dark" ? "bg-stone-900 text-stone-300" : "bg-stone-300 text-stone-900"}`}
     >
       {/* address & phone section + social section start */}
-      <div className="w-full px-20">
+      <div className="w-full px-8">
         {/* address and phone section start */}
         <div className="my-2 rounded-2xl border border-y-8 border-gray-400 p-4">
           <address className="flex flex-col justify-between gap-y-8 px-3 md:flex-row">
