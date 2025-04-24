@@ -26,11 +26,12 @@
   align-items: center;
   justify-content: space-between;
   background-color: oklch(0.704 0.14 182.503);
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
   font-size: 18px;
   font-weight: 600; /* معادل font-semibold */
   color: rgb(220, 220, 220);
+  transition: all 1000ms ease-out;
   &:hover li {
     text-decoration-color: rgb(220, 220, 220);
   }
