@@ -69,5 +69,35 @@
       "icon": "devicon:twitter",
       "address": "@x"
     }
+  ],
+  "inputs": [
+    {
+      "id": 1,
+      "type": "text",
+      "name": "firstName",
+      "placeholder": "First Name",
+      "required": true
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "name": "lastName",
+      "placeholder": "Last Name",
+      "required": true
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "name": "phoneNumber",
+      "placeholder": "Phone Number",
+      "required": true
+    },
+    {
+      "id": 4,
+      "type": "email",
+      "name": "email",
+      "placeholder": "Email",
+      "required": true
+    }
   ]
 }
