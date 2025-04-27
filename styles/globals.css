@@ -27,7 +27,7 @@ body {
 
 /* Styles for About Page and Home Page */
 .wrapper {
-  @apply p-14 text-justify transition duration-1000 ease-out;
+  @apply px-8 pb-10 pt-16 transition duration-1000 ease-out sm:text-justify ;
 }
 
 .darkWrapper {
