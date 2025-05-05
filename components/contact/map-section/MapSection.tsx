@@ -36,7 +36,7 @@ export default function MapSection() {
               icon="clarity:email-solid"
               width="28"
               height="28"
-              className="text-sky-700"
+              className="text-neutral-500"
             />
             <a aria-label="Email" href="mailto:">
               example@example.com
@@ -47,7 +47,7 @@ export default function MapSection() {
               icon="f7:phone-fill"
               width="28"
               height="28"
-              className="text-green-700"
+              className="text-green-600"
             />
             <a aria-label="Tel" href="tel:">
               +98 (21) 12345678
