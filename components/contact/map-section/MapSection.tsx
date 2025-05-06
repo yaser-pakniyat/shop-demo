@@ -5,12 +5,19 @@ import { useSelector } from "react-redux";
 export default function MapSection() {
   const theme = useSelector((store: RootState) => store.global.theme);
   return (
-    <div className="col-span-2 md:col-span-1">
+    // <div className="col-span-2 md:col-span-1">
+    <div
+      className={`col-span-2 bg-gray-50 text-gray-700 transition duration-1000 ease-out md:col-span-1
+        ${theme === "dark" ? "darkWrapper" : ""}`}
+    >
       <div className="h-24 ps-3">
         <h2 className="mt-8 font-bold">Find Us:</h2>
         <p className="my-3">Our location is available on the map.</p>
       </div>
-      <div className="grid h-[590px] w-full gap-x-2 rounded-3xl bg-sky-300 p-4 sm:grid-cols-1">
+      <div
+        className={`grid h-[590px] w-full gap-x-2 rounded-3xl bg-sky-300 p-4 transition duration-1000 ease-out sm:grid-cols-1
+          ${theme === "dark" ? "bg-sky-800" : "bg-sky-100"}`}
+      >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414696.5295978688!2d50.75673979865266!3d35.70612959789037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1746034399011!5m2!1sen!2s"
           width={400}
@@ -58,3 +65,6 @@ export default function MapSection() {
     </div>
   );
 }
+
+
+// feat: apply conditional styling based on theme state
