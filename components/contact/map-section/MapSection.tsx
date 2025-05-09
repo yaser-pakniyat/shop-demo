@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 export default function MapSection() {
   const theme = useSelector((store: RootState) => store.global.theme);
   return (
-    // <div className="col-span-2 md:col-span-1">
     <div
       className={`col-span-2 bg-gray-50 text-gray-700 transition duration-1000 ease-out md:col-span-1
         ${theme === "dark" ? "darkWrapper" : ""}`}
@@ -22,7 +21,6 @@ export default function MapSection() {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414696.5295978688!2d50.75673979865266!3d35.70612959789037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1746034399011!5m2!1sen!2s"
           width={400}
           height={600}
-          // style={{ border: 0 }}
           className="mx-auto mt-5 h-96 w-full rounded border-2 border-sky-400 sm:h-[394px]"
           allowFullScreen
           loading="lazy"
@@ -65,6 +63,3 @@ export default function MapSection() {
     </div>
   );
 }
-
-
-// feat: apply conditional styling based on theme state
