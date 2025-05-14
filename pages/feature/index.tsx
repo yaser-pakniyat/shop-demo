@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 export default function Feature() {
   const theme = useSelector((store: RootState) => store.global.theme);
   return (
-    <div className={`wrapper ${theme == "dark" ? "darkWrapper" : "lightWrapper"}`}>
+    <div className={`wrapper ${theme === "dark" ? "darkWrapper" : "lightWrapper"}`}>
       <h6 className="title">Feature Page</h6>
       <p className="text">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
