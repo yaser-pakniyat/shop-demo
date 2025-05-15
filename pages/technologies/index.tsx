@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 export default function Technologies() {
   const theme = useSelector((store: RootState) => store.global.theme);
   return (
-    <div className={`wrapper ${theme == "dark" ? "darkWrapper" : ""}`}>
+    <div className={`wrapper ${theme == "dark" ? "darkWrapper" : "lightWrapper"}`}>
       <h6 className="title">Technologies Page</h6>
       <p className="text">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
