@@ -14,7 +14,7 @@ export default function FormSection() {
   const theme = useSelector((store: RootState) => store.global.theme);
   return (
     <div
-      className={`col-span-2 md:col-span-1 ${theme === "dark" ? "darkWrapper" : "lightWrapper"}`}
+      className={`col-span-2 transition duration-1000 ease-out md:col-span-1 ${theme === "dark" ? "darkWrapper" : "lightWrapper"}`}
     >
       <div className="h-24 ps-3">
         <h2 className="mt-8 font-bold">Contact Us:</h2>
@@ -24,7 +24,7 @@ export default function FormSection() {
       </div>
       <form
         action=""
-        className={`grid h-[590px] w-full gap-x-2 rounded-3xl bg-sky-300 p-4 sm:grid-cols-1 ${theme === "dark" ? "bg-sky-800" : "bg-sky-100"}`}
+        className={`grid h-[590px] w-full gap-x-2 rounded-3xl bg-sky-300 p-4 transition duration-1000 ease-out sm:grid-cols-1 ${theme === "dark" ? "bg-sky-800" : "bg-sky-100"}`}
       >
         {db.inputs.map((input: Input) => (
           <input
