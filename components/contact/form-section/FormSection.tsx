@@ -55,8 +55,3 @@ export default function FormSection() {
     </div>
   );
 }
-
-// // input
-// "peer w-full rounded border-2 border-sky-400 bg-sky-100 p-2 placeholder-transparent outline-none focus:ring-2 focus:ring-sky-500"
-//   // span
-//   "absolute left-2 top-2 text-sky-400 transition-all duration-200 transform peer-placeholder-shown:top-2 peer-placeholder-shown:text-sky-400 peer-focus:top-0 peer-focus:text-white peer-focus:text-sm",
