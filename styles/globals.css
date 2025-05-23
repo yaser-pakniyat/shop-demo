@@ -27,7 +27,11 @@ body {
 
 /* Styles for About Page and Home Page */
 .wrapper {
-  @apply px-8 pb-10 pt-16 transition duration-1000 ease-out sm:text-justify bg-gray-50 text-gray-700;
+  @apply px-8 pt-16 pb-10 transition duration-1000 ease-out sm:text-justify;
+}
+
+.lightWrapper {
+  @apply bg-gray-50 text-gray-700;
 }
 
 .darkWrapper {
