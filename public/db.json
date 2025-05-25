@@ -24,6 +24,11 @@
       "id": 5,
       "href": "/contact",
       "linkName": "Contact"
+    },
+    {
+      "id": 6,
+      "href": "/shop",
+      "linkName": "Shop"
     }
   ],
   "social": [
@@ -98,6 +103,80 @@
       "name": "email",
       "placeholder": "Email",
       "required": true
+    }
+  ],
+  "mobiles": [
+    {
+      "id": 1,
+      "mobileName": "mobile01",
+      "address": "/mobiles/01.svg",
+      "price": 1000
+    },
+    {
+      "id": 2,
+      "mobileName": "mobile02",
+      "address": "/mobiles/02.svg",
+      "price": 2000
+    },
+    {
+      "id": 3,
+      "mobileName": "mobile03",
+      "address": "/mobiles/03.svg",
+      "price": 3000
+    },
+    {
+      "id": 4,
+      "mobileName": "mobile04",
+      "address": "/mobiles/04.svg",
+      "price": 4000
+    },
+    {
+      "id": 5,
+      "mobileName": "mobile05",
+      "address": "/mobiles/05.svg",
+      "price": 5000
+    },
+    {
+      "id": 6,
+      "mobileName": "mobile06",
+      "address": "/mobiles/06.svg",
+      "price": 6000
+    },
+    {
+      "id": 7,
+      "mobileName": "mobile07",
+      "address": "/mobiles/07.svg",
+      "price": 7000
+    },
+    {
+      "id": 8,
+      "mobileName": "mobile08",
+      "address": "/mobiles/08.svg",
+      "price": 8000
+    },
+    {
+      "id": 9,
+      "mobileName": "mobile09",
+      "address": "/mobiles/09.svg",
+      "price": 9000
+    },
+    {
+      "id": 10,
+      "mobileName": "mobile10",
+      "address": "/mobiles/10.svg",
+      "price": 10000
+    },
+    {
+      "id": 11,
+      "mobileName": "mobile11",
+      "address": "/mobiles/11.svg",
+      "price": 11000
+    },
+    {
+      "id": 12,
+      "mobileName": "mobile12",
+      "address": "/mobiles/12.svg",
+      "price": 12000
     }
   ]
 }
