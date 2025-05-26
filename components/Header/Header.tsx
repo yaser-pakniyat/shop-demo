@@ -6,7 +6,7 @@ import { RootState } from "@/redux/store";
 import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { openOffcanvas } from "@/redux/slices/offCanvas";
-import db from "@/db.json";
+import db from "@/public/db.json";
 
 export default function Header() {
   const theme = useSelector((store: RootState) => store.global.theme);
