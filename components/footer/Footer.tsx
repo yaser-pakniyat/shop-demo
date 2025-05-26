@@ -1,7 +1,7 @@
 import { RootState } from "@/redux/store";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useSelector } from "react-redux";
-import db from "@/db.json";
+import db from "@/public/db.json";
 
 export default function Footer() {
   const theme = useSelector((store: RootState) => store.global.theme);
