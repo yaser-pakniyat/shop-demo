@@ -2,7 +2,7 @@ import { closeOffcanvas } from "@/redux/slices/offCanvas";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
-import db from "@/db.json";
+import db from "@/public/db.json";
 import { RootState } from "@/redux/store";
 
 interface Menu {
