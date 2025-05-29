@@ -1,4 +1,4 @@
-import db from "@/db.json";
+import db from "@/public/db.json";
 import { RootState } from "@/redux/store";
 import { useSelector } from "react-redux";
 
