@@ -178,5 +178,68 @@
       "address": "/mobiles/12.svg",
       "price": 12000
     }
+  ],
+  "icons": [
+    {
+      "id": 1,
+      "iconName": "vscode-icons:file-type-tailwind",
+      "techName": "TailwindCSS"
+    },
+    {
+      "id": 2,
+      "iconName": "vscode-icons:file-type-css2",
+      "techName": "CSS"
+    },
+    {
+      "id": 3,
+      "iconName": "vscode-icons:file-type-git",
+      "techName": "Git"
+    },
+    {
+      "id": 4,
+      "iconName": "vscode-icons:file-type-light-prettier",
+      "techName": "Prettier"
+    },
+
+    {
+      "id": 5,
+      "iconName": "vscode-icons:file-type-reactjs",
+      "techName": "React"
+    },
+    {
+      "id": 6,
+      "iconName": "vscode-icons:file-type-typescript-official",
+      "techName": "TypeScript"
+    },
+    {
+      "id": 7,
+      "iconName": "vscode-icons:file-type-json-official",
+      "techName": "JSON"
+    },
+    {
+      "id": 8,
+      "iconName": "vscode-icons:file-type-js-official",
+      "techName": "JavaScript"
+    },
+    {
+      "id": 9,
+      "iconName": "line-md:iconify2-static-twotone",
+      "techName": "Iconify"
+    },
+    {
+      "id": 10,
+      "iconName": "devicon:swiper",
+      "techName": "Swiper"
+    },
+    {
+      "id": 11,
+      "iconName": "devicon:nextjs",
+      "techName": "Next.js"
+    },
+    {
+      "id": 12,
+      "iconName": "devicon:redux",
+      "techName": "Redux Toolkit"
+    }
   ]
 }
