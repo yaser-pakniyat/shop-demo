@@ -56,7 +56,7 @@ export default function Footer() {
 
       {/* CopyRight section start */}
       <div
-        className={` transition-colors duration-1000 ease-out ${
+        className={`transition-colors duration-1000 ease-out ${
           theme === "dark"
             ? "bg-gray-950 text-gray-300"
             : "bg-gray-400 text-gray-950"
