@@ -1,3 +1,4 @@
+import Banner from "@/components/banner/banner";
 import { RootState } from "@/redux/store";
 import { useSelector } from "react-redux";
 
