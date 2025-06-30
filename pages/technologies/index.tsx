@@ -4,6 +4,9 @@ import { useSelector } from "react-redux";
 
 export default function Technologies() {
   const theme = useSelector((store: RootState) => store.global.theme);
-  return;
-  <div></div>;
+  return (
+    <div>
+      <Banner />
+    </div>
+  );
 }
