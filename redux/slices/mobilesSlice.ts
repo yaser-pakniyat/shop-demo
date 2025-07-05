@@ -37,3 +37,5 @@ export const MobilesSlice = createSlice({
     });
   },
 });
+
+export default MobilesSlice.reducer;
