@@ -4,3 +4,9 @@ export interface Mobile {
   address: string;
   price: number;
 }
+
+export interface MobileState {
+  mobiles: Array<Mobile>;
+  pending: boolean;
+  error: string | null;
+}
