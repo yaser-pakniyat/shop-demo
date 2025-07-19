@@ -15,6 +15,7 @@ export default function MobileCard({ id, mobileName, address, price }: Mobile) {
           width={1280}
           height={720}
           priority
+          className="transition-transform duration-[2000ms] ease-linear group-hover:scale-110"
         />
         <h2 className="flex justify-center">{mobileName}</h2>
       </Link>
