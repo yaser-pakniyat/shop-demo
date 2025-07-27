@@ -5,5 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export default function MobilesCarousel() {
+  const mobiles = useSelector((store: RootState) => store.mobiles.mobiles);
   <div></div>;
 }
