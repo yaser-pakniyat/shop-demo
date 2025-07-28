@@ -1,4 +1,5 @@
 import { RootState } from "@/redux/store";
+import { fetchMobiles } from "@/redux/slices/mobilesSlice";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
