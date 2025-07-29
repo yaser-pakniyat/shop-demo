@@ -1,3 +1,4 @@
+import MobileCard from "@/components/mobile-card/MobileCard";
 import { fetchMobiles } from "@/redux/slices/mobilesSlice";
 import { useEffect } from "react";
 import { AppDispatch, RootState } from "@/redux/store";
