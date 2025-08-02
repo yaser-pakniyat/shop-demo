@@ -14,5 +14,15 @@ export default function MobilesCarousel() {
       dispatch(fetchMobiles());
     }
   }, [dispatch]);
-  <div></div>;
+  return (
+    <div>
+      <Swiper slidesPerView={1.5} spaceBetween={16}>
+        {mobiles.map((mobile) => (
+          <SwiperSlide key={mobile.id}>
+            <MobileCard {...mobile} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
 }
