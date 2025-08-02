@@ -9,5 +9,10 @@ import "swiper/css";
 export default function MobilesCarousel() {
   const mobiles = useSelector((store: RootState) => store.mobiles.mobiles);
   const dispatch = useDispatch<AppDispatch>();
+  useEffect(() => {
+    if (mobiles.length === 0) {
+      dispatch(fetchMobiles());
+    }
+  }, [dispatch]);
   <div></div>;
 }
