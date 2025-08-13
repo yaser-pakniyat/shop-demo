@@ -6,5 +6,6 @@ import { fetchMobiles } from "@/redux/slices/mobilesSlice";
 import { RiseLoader } from "react-spinners";
 
 export default function MobilesFetch() {
+  const mobiles = useSelector((store: RootState) => store.mobiles.mobiles);
   return <div></div>;
 }
