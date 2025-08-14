@@ -7,5 +7,6 @@ import { RiseLoader } from "react-spinners";
 
 export default function MobilesFetch() {
   const mobiles = useSelector((store: RootState) => store.mobiles.mobiles);
+  const pending = useSelector((store: RootState) => store.mobiles.pending);
   return <div></div>;
 }
