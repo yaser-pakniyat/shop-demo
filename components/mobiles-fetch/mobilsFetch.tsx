@@ -9,5 +9,8 @@ export default function MobilesFetch() {
   const mobiles = useSelector((store: RootState) => store.mobiles.mobiles);
   const pending = useSelector((store: RootState) => store.mobiles.pending);
   const dispatch = useDispatch<AppDispatch>();
+  useEffect(() => {
+    dispatch(fetchMobiles());
+  }, [dispatch]);
   return <div></div>;
 }
