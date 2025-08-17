@@ -12,5 +12,12 @@ export default function MobilesFetch() {
   useEffect(() => {
     dispatch(fetchMobiles());
   }, [dispatch]);
+  if (mobiles.length === 0) {
+    return (
+      <div>
+        <RiseLoader />
+      </div>
+    );
+  }
   return <div></div>;
 }
