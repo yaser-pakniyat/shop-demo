@@ -14,8 +14,8 @@ export default function MobilesFetch() {
   }, [dispatch]);
   if (mobiles.length === 0) {
     return (
-      <div>
-        <RiseLoader />
+      <div className="flex h-screen items-center justify-center">
+        <RiseLoader color="gray" />
       </div>
     );
   }
