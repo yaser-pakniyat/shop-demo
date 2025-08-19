@@ -19,5 +19,8 @@ export default function MobilesFetch() {
       </div>
     );
   }
+  if (!pending && mobiles.length === 0) {
+    return <div>No Mobile exists</div>;
+  }
   return <div></div>;
 }
