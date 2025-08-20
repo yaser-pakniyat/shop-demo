@@ -22,5 +22,11 @@ export default function MobilesFetch() {
   if (!pending && mobiles.length === 0) {
     return <div>No Mobile exists</div>;
   }
-  return <div></div>;
+  return (
+    <div>
+      {mobiles.map((mobile) => (
+        <MobileCard key={mobile.id} {...mobile} />
+      ))}
+    </div>
+  );
 }
