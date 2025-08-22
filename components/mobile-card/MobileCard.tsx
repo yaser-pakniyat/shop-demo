@@ -19,6 +19,7 @@ export default function MobileCard({ id, mobileName, address, price }: Mobile) {
         />
         <h2 className="flex justify-center">{mobileName}</h2>
       </Link>
+      <Link href={`/shop/mobilestore/${mobileName}`}>more info</Link>
     </div>
   );
 }
