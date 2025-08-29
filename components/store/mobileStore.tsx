@@ -7,6 +7,9 @@ export default function MobileStore() {
       <div>
         <MobilesCarousel />
       </div>
+      <div>
+        <MobilesFetch />
+      </div>
     </div>
   );
 }
