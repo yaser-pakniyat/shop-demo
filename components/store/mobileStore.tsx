@@ -3,7 +3,7 @@ import MobilesFetch from "@/components/mobiles-fetch/mobilsFetch";
 
 export default function MobileStore() {
   return (
-    <div>
+    <div className="wrapper">
       <div>
         <MobilesCarousel />
       </div>
