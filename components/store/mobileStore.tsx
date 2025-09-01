@@ -7,7 +7,7 @@ export default function MobileStore() {
       <div className="block md:hidden">
         <MobilesCarousel />
       </div>
-      <div>
+      <div className="hidden md:block">
         <MobilesFetch />
       </div>
     </div>
