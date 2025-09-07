@@ -4,7 +4,7 @@ import mobilesPoster from "../../public/posters/mobiles.svg";
 
 export default function Shop() {
   return (
-    <div>
+    <div className="wrapper flex flex-col items-center gap-y-4 sm:flex-row sm:justify-evenly">
       <Link href="/shop/mobilestore">
         <Image width={1280} height={720} alt="mobiles" src={mobilesPoster} />
       </Link>
