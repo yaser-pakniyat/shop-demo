@@ -14,6 +14,7 @@ export default function Shop() {
           className="w-96 rounded-2xl bg-sky-200"
         />
       </Link>
+      <Link href="/shop/tabletstore">tablet Store</Link>
     </div>
   );
 }
