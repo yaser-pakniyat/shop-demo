@@ -7,6 +7,7 @@ export const store = configureStore({
   reducer: {
     global: GlobalSlice.reducer,
     offcanvas: offCanvasReducer,
+    mobiles: mobileReducer,
   },
 });
 export type RootState = ReturnType<typeof store.getState>;
