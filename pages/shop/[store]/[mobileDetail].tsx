@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { AppDispatch, RootState } from "@/redux/store";
 import Image from "next/image";
+import { RiseLoader } from "react-spinners";
 
 export default function MobileDetail() {
   return (
