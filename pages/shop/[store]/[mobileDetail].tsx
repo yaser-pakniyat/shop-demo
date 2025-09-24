@@ -8,6 +8,7 @@ import { RiseLoader } from "react-spinners";
 
 export default function MobileDetail() {
     const dispatch = useDispatch<AppDispatch>();
+      const mobiles = useSelector((state: RootState) => state.mobiles.mobiles);
   return (
     <div>
 
