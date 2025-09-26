@@ -10,6 +10,7 @@ export default function MobileDetail() {
     const dispatch = useDispatch<AppDispatch>();
     const mobiles = useSelector((state: RootState) => state.mobiles.mobiles);
     const loading = useSelector((state: RootState) => state.mobiles.pending);
+    const { mobileDetail } = useRouter().query;
   return (
     <div>
 
