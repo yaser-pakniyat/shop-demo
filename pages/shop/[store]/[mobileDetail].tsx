@@ -12,6 +12,9 @@ export default function MobileDetail() {
     const loading = useSelector((state: RootState) => state.mobiles.pending);
     const { mobileDetail } = useRouter().query;
     const mobile = mobiles.find((m) => m.mobileName === mobileDetail);
+    useEffect(() => {
+    dispatch(fetchMobiles());
+    }, [dispatch]);
   return (
     <div>
 
