@@ -15,6 +15,8 @@ export default function MobileDetail() {
     useEffect(() => {
     dispatch(fetchMobiles());
     }, [dispatch]);
+    if (loading) return <RiseLoader />;
+
   return (
     <div>
 
