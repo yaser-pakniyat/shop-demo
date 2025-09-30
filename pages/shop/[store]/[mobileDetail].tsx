@@ -16,6 +16,12 @@ export default function MobileDetail() {
     dispatch(fetchMobiles());
     }, [dispatch]);
     if (loading) return <RiseLoader />;
+      if (!mobile)
+    return (
+      <p className="flex h-[calc(100vh-260px)] items-center justify-center">
+        no mobile exist
+      </p>
+    );
 
   return (
     <div>
