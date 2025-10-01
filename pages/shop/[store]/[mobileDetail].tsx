@@ -7,16 +7,16 @@ import Image from "next/image";
 import { RiseLoader } from "react-spinners";
 
 export default function MobileDetail() {
-    const dispatch = useDispatch<AppDispatch>();
-    const mobiles = useSelector((state: RootState) => state.mobiles.mobiles);
-    const loading = useSelector((state: RootState) => state.mobiles.pending);
-    const { mobileDetail } = useRouter().query;
-    const mobile = mobiles.find((m) => m.mobileName === mobileDetail);
-    useEffect(() => {
+  const dispatch = useDispatch<AppDispatch>();
+  const mobiles = useSelector((state: RootState) => state.mobiles.mobiles);
+  const loading = useSelector((state: RootState) => state.mobiles.pending);
+  const { mobileDetail } = useRouter().query;
+  const mobile = mobiles.find((m) => m.mobileName === mobileDetail);
+  useEffect(() => {
     dispatch(fetchMobiles());
-    }, [dispatch]);
-    if (loading) return <RiseLoader />;
-      if (!mobile)
+  }, [dispatch]);
+  if (loading) return <RiseLoader />;
+  if (!mobile)
     return (
       <p className="flex h-[calc(100vh-260px)] items-center justify-center">
         no mobile exist
@@ -24,8 +24,8 @@ export default function MobileDetail() {
     );
 
   return (
-    <div>
+    <div className="wrapper">
 
     </div>
-  )
+  );
 }
