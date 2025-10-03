@@ -26,7 +26,7 @@ export default function MobileDetail() {
   return (
     <div className="wrapper">
       <div className="flex flex-col items-center rounded-3xl border bg-lime-200">
-
+        <h1>{mobile.mobileName}</h1>
       </div>
     </div>
   );
