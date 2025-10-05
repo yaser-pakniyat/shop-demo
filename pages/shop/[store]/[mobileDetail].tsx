@@ -28,6 +28,13 @@ export default function MobileDetail() {
       <div className="flex flex-col items-center rounded-3xl border bg-lime-200">
         <h1 className="mb-4 text-2xl font-bold">{mobile.mobileName}</h1>
       </div>
+      <Image
+        src={mobile.address}
+        alt={mobile.mobileName}
+        className="w-64"
+        width={1280}
+        height={720}
+      />
     </div>
   );
 }
