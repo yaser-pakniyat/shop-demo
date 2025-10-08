@@ -35,7 +35,7 @@ export default function MobileDetail() {
         width={1280}
         height={720}
       />
-      <p className="mt-4">{mobile.mobileName}</p>
+      <p className="mt-4 ml-24">{mobile.mobileName}</p>
     </div>
   );
 }
