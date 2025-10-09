@@ -26,7 +26,7 @@ export default function MobileDetail() {
   return (
     <div className="wrapper">
       <div className="flex flex-col items-center rounded-3xl border bg-lime-200">
-        <h1 className="mb-4 text-2xl font-bold">{mobile.mobileName}</h1>
+        <h1 className="my-4 text-2xl font-bold">{mobile.mobileName}</h1>
       </div>
       <Image
         src={mobile.address}
