@@ -13,10 +13,8 @@ export default function Store() {
       storeCat = <TabletStore />;
       break;
     default:
-      storeCat = <h2>not found</h2>;
+      storeCat = (<h2>not found</h2>);
       break;
   }
-  return (
-    <div></div>
-  )
+  return <div>{storeCat}</div>;
 }
