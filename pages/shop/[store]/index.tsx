@@ -13,7 +13,11 @@ export default function Store() {
       storeCat = <TabletStore />;
       break;
     default:
-      storeCat = (<h2>not found</h2>);
+      storeCat = (
+        <div className="flex h-[calc(100vh-260px)] items-center justify-center">
+          <h2 className="text-2xl font-extrabold text-red-500">not found</h2>
+        </div>
+      );
       break;
   }
   return <div>{storeCat}</div>;
