@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
+  const theme = useSelector((store: RootState) => store.global.theme);
   return (
     <div></div>
   );
