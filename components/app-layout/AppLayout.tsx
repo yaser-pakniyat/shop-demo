@@ -6,6 +6,9 @@ import { RootState } from "@/redux/store";
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const theme = useSelector((store: RootState) => store.global.theme);
   return (
-    <div className="globalWrapper"></div>
+    <div
+      className={`globalWrapper ${theme === "dark" ? "darkWrapper" : "lightWrapper"}`}
+    >
+    </div>
   );
 }
