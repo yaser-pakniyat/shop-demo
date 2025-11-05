@@ -10,6 +10,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
       className={`globalWrapper ${theme === "dark" ? "darkWrapper" : "lightWrapper"}`}
     >
       <Header />
+      <Footer />
     </div>
   );
 }
