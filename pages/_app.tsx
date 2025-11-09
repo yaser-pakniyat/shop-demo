@@ -11,6 +11,7 @@ import Header from "@/components/Header/Header";
 import { Provider } from "react-redux";
 import store from "@/redux/store";
 import Footer from "@/components/footer/Footer";
+import AppLayout from "@/components/app-layout/AppLayout";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
