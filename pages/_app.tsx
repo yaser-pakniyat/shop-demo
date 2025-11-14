@@ -7,11 +7,9 @@ import AppLayout from "@/components/app-layout/AppLayout";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
-      <div>
-        <AppLayout>
-          <Component {...pageProps} />
-        </AppLayout>
-      </div>
+      <AppLayout>
+        <Component {...pageProps} />
+      </AppLayout>
     </Provider>
   );
 }
