@@ -2,9 +2,7 @@ import styles from "../styles/home.module.css";
 
 export default function Home() {
   return (
-    <div
-      className={`wrapper ${theme === "dark" ? "darkWrapper" : "lightWrapper"}`}
-    >
+    <div className="wrapper">
       <h6 className="title">Home Page</h6>
       <p className="text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ut sit
