@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-.wrapper {
+.pages-wrapper {
   @apply px-8 pt-16 pb-10 sm:text-justify;
 }
 
