@@ -31,7 +31,7 @@
   font-size: 18px;
   font-weight: 600; /* معادل font-semibold */
   color: rgb(220, 220, 220);
-  transition: all 1000ms ease-out;
+  transition: all 1000ms linear;
   &:hover li {
     text-decoration-color: rgb(220, 220, 220);
   }
