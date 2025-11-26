@@ -6,7 +6,7 @@ export default function About() {
   const theme = useSelector((store: RootState) => store.global.theme);
   return (
     <div
-      className={`wrapper ${theme === "dark" ? "darkWrapper" : "lightWrapper"}`}
+      className={`pages-wrapper ${theme === "dark" ? "darkWrapper" : "lightWrapper"}`}
     >
       <h6 className="title">About Page</h6>
       <p className="text">
