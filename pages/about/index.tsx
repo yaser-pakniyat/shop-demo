@@ -1,9 +1,6 @@
-import { useSelector } from "react-redux";
 import styles from "../../styles/about.module.css";
-import { RootState } from "@/redux/store";
 
 export default function About() {
-  const theme = useSelector((store: RootState) => store.global.theme);
   return (
     <div className="pages-wrapper">
       <h6 className="title">About Page</h6>
