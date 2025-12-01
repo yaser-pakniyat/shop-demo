@@ -14,7 +14,7 @@ export default function FormSection() {
   const theme = useSelector((store: RootState) => store.global.theme);
   return (
     <div
-      className={`col-span-2 transition duration-1000 ease-out md:col-span-1 ${theme === "dark" ? "darkWrapper" : "lightWrapper"}`}
+      className={`col-span-2 transition duration-1000 ease-linear md:col-span-1 ${theme === "dark" ? "darkWrapper" : "lightWrapper"}`}
     >
       <div className="h-24 ps-3">
         <h2 className="mt-8 font-bold">Contact Us:</h2>
