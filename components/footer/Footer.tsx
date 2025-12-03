@@ -7,7 +7,7 @@ export default function Footer() {
   const theme = useSelector((store: RootState) => store.global.theme);
   return (
     <footer
-      className={`flex w-full flex-col gap-y-4 pt-8 transition-colors duration-1000 ease-out ${theme === "dark" ? "bg-stone-900 text-stone-300" : "bg-stone-300 text-stone-900"}`}
+      className={`flex w-full flex-col gap-y-4 pt-8 transition-colors duration-1000 ease-linear ${theme === "dark" ? "bg-stone-900 text-stone-300" : "bg-stone-300 text-stone-900"}`}
     >
       {/* address & phone section + social section start */}
       <div className="w-full px-8">
