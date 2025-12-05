@@ -6,8 +6,7 @@ export default function MapSection() {
   const theme = useSelector((store: RootState) => store.global.theme);
   return (
     <div
-      className={`col-span-2 bg-gray-50 text-gray-700 transition duration-1000 ease-out md:col-span-1
-        ${theme === "dark" ? "darkWrapper" : ""}`}
+      className={`col-span-2 bg-gray-50 text-gray-700 transition duration-1000 ease-linear md:col-span-1 ${theme === "dark" ? "darkWrapper" : ""}`}
     >
       <div className="h-24 ps-3">
         <h2 className="mt-8 font-bold">Find Us:</h2>
