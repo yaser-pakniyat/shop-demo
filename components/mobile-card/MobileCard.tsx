@@ -4,7 +4,7 @@ import { Mobile } from "@/types/mobileTypes";
 
 export default function MobileCard({ id, mobileName, address, price }: Mobile) {
   return (
-    <div className={cardWrapper}>
+    <div className="cardWrapper">
       <Link href={`/shop/mobilestore/${mobileName}`}>
         <Image
           alt={mobileName}
