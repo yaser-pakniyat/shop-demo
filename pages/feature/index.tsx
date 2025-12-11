@@ -1,8 +1,6 @@
 export default function Feature() {
   return (
-    <div
-      className={`wrapper ${theme === "dark" ? "darkWrapper" : "lightWrapper"}`}
-    >
+    <div className="wrapper">
       <h6 className="title">Feature Page</h6>
       <p className="text">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
