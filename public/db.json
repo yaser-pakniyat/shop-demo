@@ -108,74 +108,146 @@
   "products": [
     {
       "id": 1,
-      "mobileName": "mobile01",
+      "productName": "mobile01",
       "address": "/mobiles/01.svg",
       "price": 1000
     },
     {
       "id": 2,
-      "mobileName": "mobile02",
+      "productName": "mobile02",
       "address": "/mobiles/02.svg",
       "price": 2000
     },
     {
       "id": 3,
-      "mobileName": "mobile03",
+      "productName": "mobile03",
       "address": "/mobiles/03.svg",
       "price": 3000
     },
     {
       "id": 4,
-      "mobileName": "mobile04",
+      "productName": "mobile04",
       "address": "/mobiles/04.svg",
       "price": 4000
     },
     {
       "id": 5,
-      "mobileName": "mobile05",
+      "productName": "mobile05",
       "address": "/mobiles/05.svg",
       "price": 5000
     },
     {
       "id": 6,
-      "mobileName": "mobile06",
+      "productName": "mobile06",
       "address": "/mobiles/06.svg",
       "price": 6000
     },
     {
       "id": 7,
-      "mobileName": "mobile07",
+      "productName": "mobile07",
       "address": "/mobiles/07.svg",
       "price": 7000
     },
     {
       "id": 8,
-      "mobileName": "mobile08",
+      "productName": "mobile08",
       "address": "/mobiles/08.svg",
       "price": 8000
     },
     {
       "id": 9,
-      "mobileName": "mobile09",
+      "productName": "mobile09",
       "address": "/mobiles/09.svg",
       "price": 9000
     },
     {
       "id": 10,
-      "mobileName": "mobile10",
+      "productName": "mobile10",
       "address": "/mobiles/10.svg",
       "price": 10000
     },
     {
       "id": 11,
-      "mobileName": "mobile11",
+      "productName": "mobile11",
       "address": "/mobiles/11.svg",
       "price": 11000
     },
     {
       "id": 12,
-      "mobileName": "mobile12",
+      "productName": "mobile12",
       "address": "/mobiles/12.svg",
+      "price": 12000
+    },
+    {
+      "id": 13,
+      "productName": "tablet01",
+      "address": "/tablets/01.svg",
+      "price": 1000
+    },
+    {
+      "id": 14,
+      "productName": "tablet02",
+      "address": "/tablets/02.svg",
+      "price": 2000
+    },
+    {
+      "id": 15,
+      "productName": "tablet03",
+      "address": "/tablets/03.svg",
+      "price": 3000
+    },
+    {
+      "id": 16,
+      "productName": "tablet04",
+      "address": "/tablets/04.svg",
+      "price": 4000
+    },
+    {
+      "id": 17,
+      "productName": "tablet05",
+      "address": "/tablets/05.svg",
+      "price": 5000
+    },
+    {
+      "id": 18,
+      "productName": "tablet06",
+      "address": "/tablets/06.svg",
+      "price": 6000
+    },
+    {
+      "id": 19,
+      "productName": "tablet07",
+      "address": "/tablets/07.svg",
+      "price": 7000
+    },
+    {
+      "id": 20,
+      "productName": "tablet08",
+      "address": "/tablets/08.svg",
+      "price": 8000
+    },
+    {
+      "id": 21,
+      "productName": "tablet09",
+      "address": "/tablets/09.svg",
+      "price": 9000
+    },
+    {
+      "id": 22,
+      "productName": "tablet10",
+      "address": "/tablets/10.svg",
+      "price": 10000
+    },
+    {
+      "id": 23,
+      "productName": "tablet11",
+      "address": "/tablets/11.svg",
+      "price": 11000
+    },
+    {
+      "id": 24,
+      "productName": "tablet12",
+      "address": "/tablets/12.svg",
       "price": 12000
     }
   ],
