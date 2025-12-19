@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 export default function Technologies() {
   const theme = useSelector((store: RootState) => store.global.theme);
   return (
-    <div className="wrapper">
+    <div className="pages-wrapper">
       <div className="mb-16 flex justify-center sm:text-3xl sm:font-bold">
         <h1 className="mr-2 flex items-center">
           This website has been developed with
