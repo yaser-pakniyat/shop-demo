@@ -7,6 +7,14 @@ const initialState: ProductsState = {
   error: null,
 };
 
+export const fetchProducts = createAsyncThunk(
+  "products/fetchProductsStatus",
+  async () => {
+    const res = await fetch("/db.json");
+    const data = await res.json();
+    return data.products;
+  },
+);
 export const productsSlice = createSlice({
   name: "products",
   initialState,
