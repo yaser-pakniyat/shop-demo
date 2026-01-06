@@ -24,5 +24,9 @@ export const productsSlice = createSlice({
       state.pending = true;
       state.error = null;
     });
+    builder.addCase(fetchProducts.fulfilled, (state, action) => {
+      state.pending = false;
+      state.products = action.payload;
+    });
   },
 });
