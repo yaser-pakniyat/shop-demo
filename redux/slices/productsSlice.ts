@@ -28,5 +28,10 @@ export const productsSlice = createSlice({
       state.pending = false;
       state.products = action.payload;
     });
+    builder.addCase(fetchProducts.rejected, (state, action) => {
+      state.pending = false;
+      state.error =
+        action.error.message || "Error in retrieving products images";
+    });
   },
 });
