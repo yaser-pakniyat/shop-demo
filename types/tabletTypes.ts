@@ -4,3 +4,9 @@ export interface Tablet {
   address: string;
   price: number;
 }
+
+export interface TabletState {
+  tablets: Array<Tablet>;
+  pending: boolean;
+  error: string | null;
+}
