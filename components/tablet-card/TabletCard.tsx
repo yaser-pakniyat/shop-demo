@@ -12,6 +12,7 @@ export default function TabletCard({ id, tabletName, address, price }: Tablet) {
           width={1280}
           height={720}
           priority
+          className="transition-transform duration-[2000ms] ease-linear group-hover:scale-110"
         />
         <h2 className="flex justify-center">{tabletName}</h2>
       </Link>
