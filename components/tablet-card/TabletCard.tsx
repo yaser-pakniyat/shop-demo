@@ -16,6 +16,8 @@ export default function TabletCard({ id, tabletName, address, price }: Tablet) {
         />
         <h2 className="flex justify-center">{tabletName}</h2>
       </Link>
+
+      <Link href={`/shop/tabletstore/${tabletName}`}>more info</Link>
     </div>
   );
 }
