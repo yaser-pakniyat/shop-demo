@@ -17,7 +17,12 @@ export default function TabletCard({ id, tabletName, address, price }: Tablet) {
         <h2 className="flex justify-center">{tabletName}</h2>
       </Link>
 
-      <Link href={`/shop/tabletstore/${tabletName}`}>more info</Link>
+      <Link
+        className="my-3 cursor-pointer rounded border bg-gray-300 px-3 py-1 hover:scale-90 hover:bg-green-500 hover:font-bold hover:text-white"
+        href={`/shop/tabletstore/${tabletName}`}
+      >
+        more info
+      </Link>
     </div>
   );
 }
