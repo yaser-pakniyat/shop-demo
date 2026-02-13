@@ -24,7 +24,7 @@ export default function FormSection() {
       </div>
       <form
         action=""
-        className={`grid h-[590px] w-full gap-x-2 rounded-3xl bg-sky-300 p-4 transition duration-1000 ease-linear sm:grid-cols-1 ${theme === "dark" ? "bg-sky-800" : "bg-sky-100"}`}
+        className={`grid h-[590px] w-full gap-x-2 rounded-3xl p-4 transition duration-1000 ease-linear sm:grid-cols-1 ${theme === "dark" ? "bg-sky-800" : "bg-sky-300"}`}
       >
         {db.inputs.map((input: Input) => (
           <input
