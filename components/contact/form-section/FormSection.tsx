@@ -45,7 +45,11 @@ export default function FormSection() {
           required
         ></textarea>
 
-        <p className="text-xs text-sky-700">*All fields are required</p>
+        <p
+          className={`text-xs ${theme === "dark" ? "text-sky-200" : "text-sky-700"}`}
+        >
+          *All fields are required
+        </p>
         <button
           type="submit"
           className="mt-5 cursor-pointer rounded border border-green-600 bg-green-600 p-2 font-bold hover:border-white hover:text-white"
