@@ -46,7 +46,7 @@ export default function FormSection() {
         ></textarea>
 
         <p
-          className={`text-xs ${theme === "dark" ? "text-sky-200" : "text-sky-700"}`}
+          className={`text-xs transition duration-1000 ease-linear ${theme === "dark" ? "text-sky-200" : "text-sky-700"}`}
         >
           *All fields are required
         </p>
