@@ -29,7 +29,7 @@ export default function FormSection() {
         {db.inputs.map((input: Input) => (
           <input
             key={input.id}
-            className="mt-5 w-full rounded border-2 border-sky-400 bg-sky-100 p-2 text-black placeholder-sky-400 outline-none"
+            className="mt-5 w-full rounded border-2 border-sky-400 bg-sky-100 p-2 text-black placeholder-sky-400 outline-none focus:placeholder:text-sky-200"
             type={input.type}
             name={input.name}
             placeholder={input.placeholder}
