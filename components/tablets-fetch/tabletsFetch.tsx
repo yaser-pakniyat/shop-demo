@@ -6,5 +6,8 @@ import { fetchTablets } from "@/redux/slices/tabletsSlice";
 import { RiseLoader } from "react-spinners";
 
 export default function TabletsFetch() {
-  return <div></div>;
+  const tablets = useSelector((store: RootState) => store.tablets.tablets);
+
+  return;
+  <div></div>;
 }
