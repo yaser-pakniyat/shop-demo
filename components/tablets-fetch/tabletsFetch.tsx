@@ -8,8 +8,7 @@ import { RiseLoader } from "react-spinners";
 export default function TabletsFetch() {
   const tablets = useSelector((store: RootState) => store.tablets.tablets);
   const pending = useSelector((store: RootState) => store.tablets.pending);
-
+  const dispatch = useDispatch<AppDispatch>();
   return;
-
   <div></div>;
 }
