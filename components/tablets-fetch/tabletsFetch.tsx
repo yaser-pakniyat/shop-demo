@@ -12,7 +12,11 @@ export default function TabletsFetch() {
   useEffect(() => {
     dispatch(fetchTablets());
   }, [dispatch]);
-
-  return;
-  <div></div>;
+  if (tablets.length === 0) {
+    return (
+      <div>
+        <RiseLoader />
+      </div>
+    );
+  }
 }
