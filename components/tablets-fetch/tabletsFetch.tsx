@@ -14,8 +14,8 @@ export default function TabletsFetch() {
   }, [dispatch]);
   if (tablets.length === 0) {
     return (
-      <div>
-        <RiseLoader />
+      <div className="flex h-screen items-center justify-center">
+        <RiseLoader color="gray" />
       </div>
     );
   }
