@@ -19,4 +19,7 @@ export default function TabletsFetch() {
       </div>
     );
   }
+  if (!pending && tablets.length === 0) {
+    return <div>No Mobile exists</div>;
+  }
 }
