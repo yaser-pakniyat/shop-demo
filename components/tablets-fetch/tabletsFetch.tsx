@@ -22,4 +22,11 @@ export default function TabletsFetch() {
   if (!pending && tablets.length === 0) {
     return <div>No Mobile exists</div>;
   }
+  return (
+    <div>
+      {tablets.map((tablet) => (
+        <TabletCard key={tablet.id} {...tablet} />
+      ))}
+    </div>
+  );
 }
