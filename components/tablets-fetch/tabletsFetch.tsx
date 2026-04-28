@@ -23,7 +23,7 @@ export default function TabletsFetch() {
     return <div>No Mobile exists</div>;
   }
   return (
-    <div>
+    <div className="mx-14 grid grid-cols-12 gap-y-2 sm:gap-x-2">
       {tablets.map((tablet) => (
         <TabletCard key={tablet.id} {...tablet} />
       ))}
