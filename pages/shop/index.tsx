@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import mobilesPoster from "../../public/posters/mobiles.svg";
+import tabletsPoster from "../../public/posters/tablets.svg";
 
 export default function Shop() {
   return (
