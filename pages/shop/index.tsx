@@ -5,7 +5,7 @@ import tabletsPoster from "../../public/posters/tablets.svg";
 
 export default function Shop() {
   return (
-    <div className="wrapper mt-24 flex flex-col items-center gap-y-4 sm:flex-row sm:justify-evenly">
+    <div className="wrapper mt-24 flex flex-col items-center sm:flex-row sm:justify-evenly">
       <Link href="/shop/mobilestore">
         <Image
           width={1280}
