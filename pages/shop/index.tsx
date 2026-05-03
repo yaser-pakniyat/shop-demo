@@ -15,12 +15,7 @@ export default function Shop() {
           className="w-96 rounded-2xl bg-sky-200"
         />
       </Link>
-      <Link
-        href="/shop/tabletstore"
-        className="flex h-32 w-32 items-center justify-center bg-emerald-400 text-white hover:text-black"
-      >
-        tablet Store
-      </Link>
+      <Link href="/shop/tabletstore">tablet Store</Link>
     </div>
   );
 }
