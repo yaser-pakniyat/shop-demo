@@ -15,7 +15,9 @@ export default function Shop() {
           className="w-96 rounded-2xl bg-sky-200"
         />
       </Link>
-      <Link href="/shop/tabletstore"></Link>
+      <Link href="/shop/tabletstore">
+        <Image width={1280} height={720} alt="tablets" src={tabletsPoster} />
+      </Link>
     </div>
   );
 }
