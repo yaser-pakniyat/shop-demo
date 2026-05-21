@@ -8,6 +8,7 @@ import "swiper/css";
 
 export default function TabletsCarousel() {
   const products = useSelector((store: RootState) => store.products.products);
+  const dispatch = useDispatch<AppDispatch>();
 
   return (
     <div>
