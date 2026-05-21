@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export default function TabletsCarousel() {
+  const products = useSelector((store: RootState) => store.products.products);
 
   return (
     <div>
