@@ -16,7 +16,13 @@ export default function TabletsCarousel() {
   }, [dispatch]);
   return (
     <div>
-
+      <Swiper slidesPerView={1.5} spaceBetween={16}>
+        {products.slice(12).map((product) => (
+          <SwiperSlide key={product.id}>
+            <TabletCard {...product} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 }
