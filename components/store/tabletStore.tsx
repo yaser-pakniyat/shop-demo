@@ -7,6 +7,9 @@ export default function TabletStore() {
       <div>
         <TabletsCarousel />
       </div>
+      <div>
+        <TabletsFetch />
+      </div>
     </div>
   );
 }
