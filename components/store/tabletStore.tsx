@@ -3,7 +3,7 @@ import TabletsFetch from "@/components/tablets-fetch/tabletsFetch";
 
 export default function TabletStore() {
   return (
-    <div>
+    <div className="pages-wrapper">
       <div>
         <TabletsCarousel />
       </div>
