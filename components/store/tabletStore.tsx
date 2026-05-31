@@ -7,7 +7,7 @@ export default function TabletStore() {
       <div className="block md:hidden">
         <TabletsCarousel />
       </div>
-      <div>
+      <div className="hidden md:block">
         <TabletsFetch />
       </div>
     </div>
