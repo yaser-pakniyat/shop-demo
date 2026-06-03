@@ -1,5 +1,5 @@
 import MobileCard from "@/components/mobile-card/MobileCard";
-import { fetchMobiles } from "@/redux/slices/mobilesSlice";
+import { fetchProducts } from "@/redux/slices/productsSlice";
 import { useEffect } from "react";
 import { AppDispatch, RootState } from "@/redux/store";
 import { useDispatch, useSelector } from "react-redux";
@@ -7,19 +7,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export default function MobilesCarousel() {
-  const mobiles = useSelector((store: RootState) => store.mobiles.mobiles);
+  const products = useSelector((store: RootState) => store.products.products);
   const dispatch = useDispatch<AppDispatch>();
   useEffect(() => {
-    if (mobiles.length === 0) {
-      dispatch(fetchMobiles());
+    if (products.length === 0) {
+      dispatch(fetchProducts());
     }
   }, [dispatch]);
   return (
     <div>
       <Swiper slidesPerView={1.5} spaceBetween={16}>
-        {mobiles.map((mobile) => (
-          <SwiperSlide key={mobile.id}>
-            <MobileCard {...mobile} />
+        {products.slice(0, 12).map((product) => (
+          <SwiperSlide key={product.id}>
+            <MobileCard {...product} />
           </SwiperSlide>
         ))}
       </Swiper>
