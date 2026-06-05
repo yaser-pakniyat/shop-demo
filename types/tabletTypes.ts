@@ -1,12 +1,13 @@
-export interface Tablet {
-  id: number;
-  tabletName: string;
-  address: string;
-  price: number;
-}
+// export interface Tablet {
+//   id: number;
+//   tabletName: string;
+//   address: string;
+//   price: number;
+//   productName: string;
+// }
 
-export interface TabletState {
-  tablets: Array<Tablet>;
-  pending: boolean;
-  error: string | null;
-}
+// export interface TabletState {
+//   tablets: Array<Tablet>;
+//   pending: boolean;
+//   error: string | null;
+// }
