@@ -1,5 +1,5 @@
 import { fetchProducts } from "@/redux/slices/productsSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function ProductDetail() {
   return (
