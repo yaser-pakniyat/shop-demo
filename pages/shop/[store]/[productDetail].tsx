@@ -7,6 +7,7 @@ import Image from "next/image";
 import { RiseLoader } from "react-spinners";
 
 export default function ProductDetail() {
+  const dispatch = useDispatch<AppDispatch>();
   return (
     <div>
 
