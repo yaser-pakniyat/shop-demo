@@ -8,6 +8,7 @@ import { RiseLoader } from "react-spinners";
 
 export default function ProductDetail() {
   const dispatch = useDispatch<AppDispatch>();
+  const products = useSelector((state: RootState) => state.products.products);
   return (
     <div>
 
