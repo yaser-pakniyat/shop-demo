@@ -12,6 +12,7 @@ export default function ProductDetail() {
   const loading = useSelector((state: RootState) => state.products.pending);
   const rejected = useSelector((state: RootState) => state.products.error);
   const { productDetail } = useRouter().query;
+  const product = products.find((p) => p.productName === productDetail);
   return (
     <div>
 
