@@ -17,8 +17,10 @@ export default function ProductDetail() {
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch]);
+  if (loading) return <RiseLoader />;
   return (
     <div>
+      
     </div>
   );
 }
