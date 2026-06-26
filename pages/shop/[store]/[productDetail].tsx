@@ -13,9 +13,12 @@ export default function ProductDetail() {
   const rejected = useSelector((state: RootState) => state.products.error);
   const { productDetail } = useRouter().query;
   const product = products.find((p) => p.productName === productDetail);
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch]);
   return (
     <div>
-
     </div>
   );
 }
