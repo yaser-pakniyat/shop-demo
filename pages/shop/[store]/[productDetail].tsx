@@ -10,7 +10,7 @@ export default function ProductDetail() {
   const dispatch = useDispatch<AppDispatch>();
   const products = useSelector((state: RootState) => state.products.products);
   const loading = useSelector((state: RootState) => state.products.pending);
-  const rejected = useSelector((state: RootState) => state.products.error);
+  const error = useSelector((state: RootState) => state.products.error);
   const { productDetail } = useRouter().query;
   const product = products.find((p) => p.productName === productDetail);
 
