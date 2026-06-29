@@ -18,6 +18,13 @@ export default function ProductDetail() {
     dispatch(fetchProducts());
   }, [dispatch]);
   if (loading) return <RiseLoader />;
+  if (error) {
+    return (
+      <p className="flex h-[calc(100vh-260px)] items-center justify-center">
+        {error}
+      </p>
+    );
+  }
   return (
     <div>
       
