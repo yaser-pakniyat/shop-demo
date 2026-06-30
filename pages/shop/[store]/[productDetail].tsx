@@ -25,6 +25,14 @@ export default function ProductDetail() {
       </p>
     );
   }
+
+  if (!product)
+    return (
+      <p className="flex h-[calc(100vh-260px)] items-center justify-center">
+        There is no product
+      </p>
+    );
+
   return (
     <div>
       
