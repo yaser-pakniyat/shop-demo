@@ -32,10 +32,19 @@ export default function ProductDetail() {
         There is no product
       </p>
     );
-
   return (
-    <div>
-      
+    <div className="pages-wrapper">
+      <div className="flex flex-col items-center rounded-3xl border bg-lime-200">
+        <h1 className="my-4 text-2xl font-bold">{product.productName}</h1>
+      </div>
+      <Image
+        src={product.address}
+        alt={product.productName}
+        className="w-64"
+        width={1280}
+        height={720}
+      />
+      <p className="mt-4 ml-24">{product.productName}</p>
     </div>
   );
 }
