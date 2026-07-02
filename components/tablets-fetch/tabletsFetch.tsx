@@ -2,29 +2,29 @@ import { useEffect } from "react";
 import TabletCard from "../tablet-card/TabletCard";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/redux/store";
-import { fetchTablets } from "@/redux/slices/tabletsSlice";
+import { fetchProducts } from "@/redux/slices/productsSlice";
 import { RiseLoader } from "react-spinners";
 
 export default function TabletsFetch() {
-  const tablets = useSelector((store: RootState) => store.tablets.tablets);
-  const pending = useSelector((store: RootState) => store.tablets.pending);
+  const products = useSelector((store: RootState) => store.products.products);
+  const pending = useSelector((store: RootState) => store.products.pending);
   const dispatch = useDispatch<AppDispatch>();
   useEffect(() => {
-    dispatch(fetchTablets());
+    dispatch(fetchProducts());
   }, [dispatch]);
-  if (tablets.length === 0) {
+  if (products.length === 0) {
     return (
       <div className="flex h-screen items-center justify-center">
         <RiseLoader color="gray" />
       </div>
     );
   }
-  if (!pending && tablets.length === 0) {
-    return <div>No Mobile exists</div>;
+  if (!pending && products.length === 0) {
+    return <div>No Tablet exists</div>;
   }
   return (
     <div className="mx-14 grid grid-cols-12 gap-y-2 sm:gap-x-2">
-      {tablets.map((tablet) => (
+      {products.slice(12).map((tablet) => (
         <TabletCard key={tablet.id} {...tablet} />
       ))}
     </div>
