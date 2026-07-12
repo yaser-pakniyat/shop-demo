@@ -10,7 +10,7 @@ const initialState: ProductsState = {
 export const fetchProducts = createAsyncThunk(
   "products/fetchProductsStatus",
   async () => {
-    const res = await fetch("/db.json");
+    const res = await fetch("/shop-demo/db.json");
     const data = await res.json();
     return data.products;
   },
