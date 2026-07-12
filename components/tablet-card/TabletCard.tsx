@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@/types/productTypes";
 
@@ -11,12 +11,12 @@ export default function TabletCard({
   return (
     <div className="cardWrapper group">
       <Link href={`/shop/tabletstore/${productName}`}>
-        <Image
+        <img
           alt={productName}
           src={address}
           width={1280}
           height={720}
-          priority
+          // priority
           className="transition-transform duration-[2000ms] ease-linear group-hover:scale-110"
         />
         <h2 className="flex justify-center">{productName}</h2>

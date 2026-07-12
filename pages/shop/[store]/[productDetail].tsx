@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { AppDispatch, RootState } from "@/redux/store";
-import Image from "next/image";
+// import Image from "next/image";
 import { RiseLoader } from "react-spinners";
 
 export default function ProductDetail() {
@@ -37,7 +37,7 @@ export default function ProductDetail() {
       <div className="flex flex-col items-center rounded-3xl border bg-lime-200">
         <h1 className="my-4 text-2xl font-bold">{product.productName}</h1>
       </div>
-      <Image
+      <img
         src={product.address}
         alt={product.productName}
         className="w-64"
