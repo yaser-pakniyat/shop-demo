@@ -13,7 +13,8 @@ export default function MobileCard({
       <Link href={`/shop/mobilestore/${productName}`}>
         <img
           alt={productName}
-          src={address}
+          // src={address}
+          src={`/shop-demo${address}`}
           width={1280}
           height={720}
           // priority

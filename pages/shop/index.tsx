@@ -11,7 +11,8 @@ export default function Shop() {
             width={1280}
             height={720}
             alt={poster.alt}
-            src={poster.src}
+            // src={poster.src}
+            src={`/shop-demo${poster.src}`}
             className="w-96 rounded-2xl bg-sky-200"
           />
         </Link>

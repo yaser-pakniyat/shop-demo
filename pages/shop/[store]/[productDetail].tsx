@@ -38,7 +38,8 @@ export default function ProductDetail() {
         <h1 className="my-4 text-2xl font-bold">{product.productName}</h1>
       </div>
       <img
-        src={product.address}
+        // src={product.address}
+        src={`/shop-demo${product.address}`}
         alt={product.productName}
         className="w-64"
         width={1280}
