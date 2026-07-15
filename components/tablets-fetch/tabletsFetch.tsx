@@ -12,7 +12,7 @@ export default function TabletsFetch() {
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch]);
-  if (products.length === 0) {
+  if (pending) {
     return (
       <div className="flex h-screen items-center justify-center">
         <RiseLoader color="gray" />
