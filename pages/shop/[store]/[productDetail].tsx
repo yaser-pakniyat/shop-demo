@@ -35,7 +35,9 @@ export default function ProductDetail() {
     );
   return (
     <div className="pages-wrapper">
-      <div className="flex flex-col items-center rounded-3xl border bg-lime-200">
+      <div
+        className={`flex flex-col items-center rounded-3xl border ${theme === "dark" ? "bg-stone-900 text-stone-300" : "bg-stone-300 text-stone-900"} `}
+      >
         <h1 className="my-4 text-2xl font-bold">{product.productName}</h1>
       </div>
       <img
