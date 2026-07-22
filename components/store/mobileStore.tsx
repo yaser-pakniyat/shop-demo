@@ -1,4 +1,4 @@
-import MobilesCarousel from "@/components/Carousel/responsive-carousel/MobilesCarousel";
+import MobilesCarousel from "@/components/carousels/MobilesCarousel";
 import MobilesFetch from "@/components/mobiles-fetch/MobilesFetch";
 
 export default function MobileStore() {
