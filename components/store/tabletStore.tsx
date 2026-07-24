@@ -1,4 +1,4 @@
-import TabletsCarousel from "../Carousel/responsive-carousel/TabletsCarousel";
+import TabletsCarousel from "../carousels/TabletsCarousel";
 import TabletsFetch from "@/components/tablets-fetch/tabletsFetch";
 
 export default function TabletStore() {
