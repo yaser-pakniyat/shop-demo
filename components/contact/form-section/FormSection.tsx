@@ -1,14 +1,7 @@
 import db from "@/public/db.json";
 import { RootState } from "@/redux/store";
 import { useSelector } from "react-redux";
-
-interface Input {
-  id: number;
-  type: string;
-  name: string;
-  placeholder: string;
-  required: boolean;
-}
+import Input from "@/types/input";
 
 export default function FormSection() {
   const theme = useSelector((store: RootState) => store.global.theme);
