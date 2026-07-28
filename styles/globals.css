@@ -13,7 +13,7 @@
 }
 
 .darkWrapper {
-  @apply bg-gray-700 text-gray-50;
+  @apply bg-stone-900 text-gray-50;
 }
 
 .title {
