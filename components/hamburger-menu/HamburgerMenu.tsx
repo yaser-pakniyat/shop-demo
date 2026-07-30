@@ -4,12 +4,7 @@ import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import db from "@/public/db.json";
 import { RootState } from "@/redux/store";
-
-interface Menu {
-  id: number;
-  href: string;
-  linkName: string;
-}
+import Menu from "@/types/menu";
 
 export default function HamburgerMenu() {
   const isOpen = useSelector((store: RootState) => store.offcanvas.isOpen);
