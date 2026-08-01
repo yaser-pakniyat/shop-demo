@@ -17,7 +17,7 @@ export default function HamburgerMenu() {
     <>
       {isOpen && (
         <div
-          className={`fixed inset-0 z-50 ${theme === "dark" ? "bg-white/70" : "bg-black/70"}`}
+          className={`fixed inset-0 z-50 md:hidden ${theme === "dark" ? "bg-white/70" : "bg-black/70"}`}
           onClick={CloseOffCanvasHandler}
         ></div>
       )}
