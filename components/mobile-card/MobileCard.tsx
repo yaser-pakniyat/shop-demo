@@ -23,7 +23,7 @@ export default function MobileCard({
         <h2 className="flex justify-center">{productName}</h2>
       </Link>
       <Link
-        className="my-3 cursor-pointer rounded border bg-gray-300 px-3 py-1 hover:scale-90 hover:bg-green-500 hover:font-bold hover:text-white"
+        className="my-3 cursor-pointer rounded border px-3 py-1 hover:scale-90 hover:bg-green-500 hover:font-bold hover:text-white"
         href={`/shop/mobilestore/${productName}`}
       >
         more info
