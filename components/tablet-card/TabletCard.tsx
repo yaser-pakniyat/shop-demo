@@ -24,7 +24,7 @@ export default function TabletCard({
       </Link>
 
       <Link
-        className="my-3 cursor-pointer rounded border px-3 py-1 hover:scale-90 hover:bg-green-500 hover:font-bold hover:text-white"
+        className="my-3 cursor-pointer rounded border px-3 py-1 hover:scale-90 hover:bg-green-500 hover:font-bold hover:text-white active:scale-50"
         href={`/shop/tabletstore/${productName}`}
       >
         more info
