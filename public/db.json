@@ -327,5 +327,196 @@
       "href": "/shop/tabletstore",
       "alt": "tablets"
     }
+  ],
+  "staff": [
+    {
+      "id": 1,
+      "name": "Mr. CHM",
+      "job_title": "Chairman of the Board",
+      "email": "chm_email@example.com",
+      "pic": "fluent-emoji-flat:man-beard-dark"
+    },
+    {
+      "id": 2,
+      "name": "Ms. BM",
+      "job_title": "Board Member",
+      "email": "bm_email@example.com",
+      "pic": "twemoji:woman-red-hair"
+    },
+    {
+      "id": 3,
+      "name": "Mr. CEO",
+      "job_title": "Chief Executive Officer",
+      "email": "ceo_email@example.com",
+      "pic": "twemoji:man-medium-skin-tone"
+    },
+    {
+      "id": 4,
+      "name": "Mr. CTO",
+      "job_title": "Chief Technology Officer",
+      "email": "cto_email@example.com",
+      "pic": "twemoji:man-curly-hair"
+    },
+    {
+      "id": 5,
+      "name": "Mr. CFO",
+      "job_title": "Chief Financial Officer",
+      "email": "cfo_email@example.com",
+      "pic": "fluent-emoji-flat:man-medium"
+    },
+    {
+      "id": 6,
+      "name": "Ms. CPO",
+      "job_title": "Chief Product Officer",
+      "email": "cpo_email@example.com",
+      "pic": "fluent-emoji-flat:woman-medium"
+    },
+    {
+      "id": 7,
+      "name": "Mr. COO",
+      "job_title": "Chief Operating Officer",
+      "email": "coo_email@example.com",
+      "pic": "twemoji:man-beard"
+    },
+    {
+      "id": 8,
+      "name": "Mr. MD",
+      "job_title": "Managing Director",
+      "email": "md_email@example.com",
+      "pic": "fluent-emoji-flat:man-bald-dark"
+    },
+    {
+      "id": 9,
+      "name": "Ms. VP",
+      "job_title": "Vice President",
+      "email": "vp_email@example.com",
+      "pic": "noto-v1:woman"
+    },
+    {
+      "id": 10,
+      "name": "Mr. DIR",
+      "job_title": "Director",
+      "email": "dir_email@example.com",
+      "pic": "fluent-emoji-flat:man-white-hair-light"
+    },
+    {
+      "id": 11,
+      "name": "Mr. SD",
+      "job_title": "Senior Director",
+      "email": "sd_email@example.com",
+      "pic": "fxemoji:man"
+    },
+    {
+      "id": 12,
+      "name": "Ms. EM",
+      "job_title": "Engineering Manager",
+      "email": "em_email@example.com",
+      "pic": "streamline-emojis:woman-2"
+    },
+    {
+      "id": 13,
+      "name": "Mr. PM",
+      "job_title": "Product Manager",
+      "email": "pm_email@example.com",
+      "pic": "emojione-v1:man"
+    },
+    {
+      "id": 14,
+      "name": "Mr. PM2",
+      "job_title": "Project Manager",
+      "email": "project_manager_email@example.com",
+      "pic": "fluent-emoji-flat:man-beard-medium-light"
+    },
+    {
+      "id": 15,
+      "name": "Ms. TL",
+      "job_title": "Technical Lead",
+      "email": "tl_email@example.com",
+      "pic": "fluent-emoji-flat:woman-red-hair-light"
+    },
+    {
+      "id": 16,
+      "name": "Mr. TL2",
+      "job_title": "Team Lead",
+      "email": "team_lead_email@example.com",
+      "pic": "noto:man-red-hair"
+    },
+    {
+      "id": 17,
+      "name": "Mr. SA",
+      "job_title": "Software Architect",
+      "email": "sa_email@example.com",
+      "pic": "fluent-emoji-flat:man-bald-light"
+    },
+    {
+      "id": 18,
+      "name": "Ms. SSE",
+      "job_title": "Senior Software Engineer",
+      "email": "sse_email@example.com",
+      "pic": "twemoji:woman"
+    },
+    {
+      "id": 19,
+      "name": "Mr. SE",
+      "job_title": "Software Engineer",
+      "email": "se_email@example.com",
+      "pic": "twemoji:man-dark-skin-tone"
+    },
+    {
+      "id": 20,
+      "name": "Mr. FSD",
+      "job_title": "Full-Stack Developer",
+      "email": "fsd_email@example.com",
+      "pic": "fluent-emoji-flat:man-medium-light"
+    },
+    {
+      "id": 21,
+      "name": "Ms. FED",
+      "job_title": "Front-End Developer",
+      "email": "fed_email@example.com",
+      "pic": "fluent-emoji-flat:woman"
+    },
+    {
+      "id": 22,
+      "name": "Mr. BED",
+      "job_title": "Back-End Developer",
+      "email": "bed_email@example.com",
+      "pic": "twemoji:man-pouting"
+    },
+    {
+      "id": 23,
+      "name": "Mr. QA",
+      "job_title": "QA Engineer",
+      "email": "qa_email@example.com",
+      "pic": "noto:man-beard"
+    },
+    {
+      "id": 24,
+      "name": "Ms. DOP",
+      "job_title": "DevOps Engineer",
+      "email": "devops_email@example.com",
+      "pic": "fluent-emoji-flat:old-woman-dark"
+    },
+    {
+      "id": 25,
+      "name": "Mr. UXD",
+      "job_title": "UI/UX Designer",
+      "email": "uxd_email@example.com",
+      "pic": "twemoji:man-red-hair"
+    },
+    {
+      "id": 26,
+      "name": "Mr. DA",
+      "job_title": "Data Analyst",
+      "email": "da_email@example.com",
+      "pic": "fluent-emoji-flat:old-man"
+    },
+    {
+      "id": 27,
+      "name": "Ms. HRM",
+      "job_title": "HR Manager",
+      "email": "hrm_email@example.com",
+      "pic": "streamline-emojis:woman-1"
+    }
   ]
 }
