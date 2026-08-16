@@ -14,6 +14,20 @@ export default function StaffCard() {
             {/* pic + name */}
             <Icon height="120" width="120" icon={staff.pic} />
             <h4 className="self-center text-xl sm:text-4xl">{staff.name}</h4>
+
+            {/* title icon + title */}
+            <div className="flex items-center">
+              <Icon
+                icon="tabler:briefcase-filled"
+                height="20"
+                style={{
+                  color: "#991b2e",
+                  marginRight: "6px",
+                  marginTop: "2px",
+                }}
+              />
+              <p>{staff.job_title}</p>
+            </div>
           </div>
         </div>
       ))}
