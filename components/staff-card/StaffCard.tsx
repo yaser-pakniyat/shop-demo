@@ -28,6 +28,22 @@ export default function StaffCard() {
               />
               <p>{staff.job_title}</p>
             </div>
+
+            {/*email icon + email address */}
+            <div className="flex items-center">
+              <Icon
+                icon="clarity:email-line"
+                height="20"
+                style={{
+                  color: "blueviolet",
+                  marginRight: "6px",
+                  marginTop: "2px",
+                }}
+              />
+              <a href={`mailto:${staff.email}`} className="text-sm">
+                {staff.email}
+              </a>
+            </div>
           </div>
         </div>
       ))}
