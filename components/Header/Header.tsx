@@ -7,8 +7,10 @@ import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { openOffcanvas } from "@/redux/slices/offCanvas";
 import db from "@/public/db.json";
+import { useRouter } from "next/router";
 
 export default function Header() {
+  const { pathname } = useRouter();
   const theme = useSelector((store: RootState) => store.global.theme);
   const dispatch = useDispatch();
   const offcanvasOpenHandler = () => {
@@ -36,11 +38,23 @@ export default function Header() {
           {db.menu
             .slice()
             .reverse()
-            .map((menu) => (
-              <li key={menu.id}>
-                <Link href={menu.href}>{menu.linkName}</Link>
-              </li>
-            ))}
+            .map((menu) => {
+              const isActive =
+                menu.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(menu.href);
+
+              return (
+                <li key={menu.id}>
+                  <Link
+                    href={menu.href}
+                    className={` ${isActive ? "underline underline-offset-6" : ""}`}
+                  >
+                    {menu.linkName}
+                  </Link>
+                </li>
+              );
+            })}
         </ul>
       </nav>
     </header>
