@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 
 export default function Hero() {
+  const theme = useSelector((store: RootState) => store.global.theme);
   return (
     <div>
       <div>
