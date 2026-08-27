@@ -14,7 +14,11 @@ export default function Hero() {
         <p className={styles.paragraph}>
           You could find your device easily with the best price
         </p>
-        <Link href="/shop" className={styles.link} draggable={false}>
+        <Link
+          href="/shop"
+          className={`${styles.link} ${theme === "dark" ? "bg-amber-500" : "bg-amber-400"}`}
+          draggable={false}
+        >
           Discover Shop
         </Link>
       </div>
