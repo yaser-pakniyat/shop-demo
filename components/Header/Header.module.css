@@ -1,39 +1,9 @@
-.navigationList li:hover {
-  text-decoration: underline;
-  text-underline-offset: 7px;
-}
+@reference "tailwindcss";
 
 .navigationList {
-  display: flex;
-  gap: 0 32px;
-}
-
-.header.dark {
-  background-color: rgb(59, 25, 90);
-  color: lightpink;
-  &:hover li {
-    text-decoration-color: lightpink;
-  }
+  @apply flex gap-x-8 gap-y-0;
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  z-index: 50;
-  display: flex;
-  height: 48px;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  background-color: oklch(0.704 0.14 182.503);
-  padding-left: 32px;
-  padding-right: 32px;
-  font-size: 18px;
-  font-weight: 600; /* معادل font-semibold */
-  color: rgb(220, 220, 220);
-  transition: all 1000ms linear;
-  &:hover li {
-    text-decoration-color: rgb(220, 220, 220);
-  }
+  @apply fixed top-0 z-50 flex h-12 w-full items-center justify-between px-8 text-lg font-semibold transition-all duration-1000 ease-linear;
 }
-/* fixed top-0 z-50 flex h-12 w-full items-center justify-between bg-amber-400 px-12 text-lg font-semibold text-red-900 */

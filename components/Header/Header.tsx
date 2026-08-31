@@ -18,7 +18,7 @@ export default function Header() {
   };
   return (
     <header
-      className={`${styles.header} ${theme == "dark" ? styles.dark : ""}`}
+      className={`${styles.header} ${theme == "dark" ? "bg-slate-950 text-gray-300" : "bg-teal-500 text-black"}`}
     >
       <ThemeButton />
       <HamburgerMenu />
@@ -48,7 +48,7 @@ export default function Header() {
                 <li key={menu.id}>
                   <Link
                     href={menu.href}
-                    className={` ${isActive ? "underline underline-offset-6" : ""}`}
+                    className={`hover:scale-110 hover:cursor-pointer ${isActive ? "underline underline-offset-6" : ""}`}
                   >
                     {menu.linkName}
                   </Link>
