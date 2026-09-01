@@ -13,7 +13,7 @@
 }
 
 .paragraph {
-  @apply pt-6 text-center text-xs sm:text-xl md:text-2xl 2xl:text-4xl;
+  @apply pt-6 text-center text-xs font-extralight sm:text-xl md:text-2xl 2xl:text-4xl;
 }
 
 .link {
