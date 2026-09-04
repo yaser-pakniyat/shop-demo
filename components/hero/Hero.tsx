@@ -3,8 +3,14 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 import styles from "./Hero.module.css";
 import { Baumans } from "next/font/google";
+import { Edu_NSW_ACT_Hand_Pre } from "next/font/google";
 
 const baumans = Baumans({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const ENAHP = Edu_NSW_ACT_Hand_Pre({
   subsets: ["latin"],
   weight: "400",
 });
@@ -19,7 +25,7 @@ export default function Hero() {
         <h1 className={`${baumans.className} ${styles.heading}`}>
           Choose your device
         </h1>
-        <p className={styles.paragraph}>
+        <p className={`${ENAHP.className} ${styles.paragraph}`}>
           You could find your device easily with the best price
         </p>
         <Link
