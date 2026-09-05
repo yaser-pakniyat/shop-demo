@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import db from "@/public/db.json";
 import { RootState } from "@/redux/store";
 import Menu from "@/types/menu";
+import styles from "./HamburgerMenu.module.css";
 
 export default function HamburgerMenu() {
   const isOpen = useSelector((store: RootState) => store.offcanvas.isOpen);
@@ -17,12 +18,12 @@ export default function HamburgerMenu() {
     <>
       {isOpen && (
         <div
-          className={`fixed inset-0 z-50 md:hidden ${theme === "dark" ? "bg-white/70" : "bg-black/70"}`}
+          className={`${styles.overLay} ${theme === "dark" ? "bg-white/70" : "bg-black/70"}`}
           onClick={CloseOffCanvasHandler}
         ></div>
       )}
       <aside
-        className={`fixed top-0 right-0 z-[60] h-screen w-1/2 transition-all duration-1000 ease-linear ${isOpen ? "translate-x-0" : "translate-x-full"} ${theme === "dark" ? "bg-stone-700" : "bg-green-800"} md:translate-x-full`}
+        className={`${styles.aside} ${isOpen ? "translate-x-0" : "translate-x-full"} ${theme === "dark" ? "bg-stone-700" : "bg-green-800"}`}
       >
         {/* close button start */}
         <div className="pt-3 pl-3">
@@ -30,7 +31,7 @@ export default function HamburgerMenu() {
             icon="line-md:close"
             width="26"
             height="26"
-            className="cursor-pointer hover:scale-105"
+            className={styles.icon}
             onClick={CloseOffCanvasHandler}
           />
         </div>
@@ -40,12 +41,9 @@ export default function HamburgerMenu() {
         <nav>
           <ul className="">
             {db.menu.map((menu: Menu) => (
-              <li
-                key={menu.id}
-                className="h-12 w-full text-xl hover:bg-blue-950"
-              >
+              <li key={menu.id} className={styles.list}>
                 <Link
-                  className="flex h-full w-full items-center justify-center hover:scale-105"
+                  className={styles.link}
                   href={menu.href}
                   onClick={CloseOffCanvasHandler}
                 >
