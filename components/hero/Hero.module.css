@@ -1,7 +1,7 @@
 @reference "tailwindcss";
 
 .heroWrapper {
-  @apply h-dvh w-full bg-linear-to-b transition-colors duration-1000 ease-linear select-none selection:bg-transparent;
+  @apply h-dvh w-full bg-linear-to-b transition-colors duration-1000 ease-linear select-none;
 }
 
 .contentWrapper {
