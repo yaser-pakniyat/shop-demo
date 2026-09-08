@@ -17,7 +17,7 @@
 }
 
 .submitButton {
-  @apply mt-5 cursor-pointer rounded border border-green-600 bg-green-600 p-2 font-bold hover:border-white hover:text-white;
+  @apply transition duration-1000 ease-linear mt-5 cursor-pointer rounded border border-green-600 bg-green-600 p-2 font-bold hover:border-white hover:text-white;
 }
 
 .requiredNote {
