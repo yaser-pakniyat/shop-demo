@@ -1,0 +1,13 @@
+@reference "tailwindcss";
+
+.wrapper {
+  @apply col-span-2 bg-gray-50 text-gray-700 transition duration-1000 ease-linear md:col-span-1;
+}
+
+.map {
+  @apply grid h-[590px] w-full gap-x-2 rounded-3xl bg-sky-300 p-4 transition duration-1000 ease-linear sm:grid-cols-1;
+}
+
+.iframe {
+  @apply mx-auto mt-5 h-96 w-full rounded border-2 border-sky-400 sm:h-[394px];
+}
