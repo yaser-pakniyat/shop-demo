@@ -1,7 +1,7 @@
 import { RootState } from "@/redux/store";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useSelector } from "react-redux";
-import styles from "./mapSection.module.css";
+import styles from "./MapSection.module.css";
 
 export default function MapSection() {
   const theme = useSelector((store: RootState) => store.global.theme);
