@@ -1,4 +1,4 @@
-@reference "Tawilwindcss";
+@reference "tailwindcss";
 
 .image {
   @apply transition-transform duration-[2000ms] ease-linear group-hover:scale-110;
