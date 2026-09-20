@@ -1,0 +1,17 @@
+@reference "tailwindcss";
+
+.wrapper {
+  @apply grid grid-cols-12 gap-4;
+}
+
+.cardWrapper {
+  @apply col-span-12 w-full rounded-2xl border-4 border-double border-lime-500 shadow-lime-700 hover:shadow-lg md:col-span-6 lg:col-span-4;
+}
+
+.content {
+  @apply flex w-full flex-col items-center-safe gap-y-3 p-1;
+}
+
+.name {
+  @apply self-center text-xl sm:text-4xl;
+}
