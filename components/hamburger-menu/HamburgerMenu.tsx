@@ -23,7 +23,7 @@ export default function HamburgerMenu() {
         ></div>
       )}
       <aside
-        className={`${styles.aside} ${isOpen ? "translate-x-0" : "translate-x-full"} ${theme === "dark" ? "bg-stone-700" : "bg-green-800"}`}
+        className={`${styles.aside} ${isOpen ? "translate-x-0" : "translate-x-full"} ${theme === "dark" ? "from-slate-950 to-stone-900" : "from-teal-500 to-gray-50"}`}
       >
         {/* close button start */}
         <div className="pt-3 pl-3">
